@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Home-Sri venkateswara college of engineering</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.container{
+max-width:981px;
+margin:0 auto;
+}
+</style>
+</head>
+<body>
+<img src="C:\Users\palani\bannerT.png">
+<header>
+<div class="container bg-white">
+<nav><table bgcolor="skyblue" width="100%">
+<tr>
+	<th><a href="#" class="active" style="text-decoration:none;">Home</a></th>
+	<th><a href="#" style="text-decoration:none;">AboutUs</a></th>
+	<th><a href="#"style="text-decoration:none;">Admin</a></th>
+	<th><a href="#"style="text-decoration:none;">Admissions</a></th>
+	<th><a href="#"style="text-decoration:none;">Academics</a></th>
+	<th><a href="#"style="text-decoration:none;">COE</a></th>
+	<th><a href="#"style="text-decoration:none;">Research</a></th>
+	<th><a href="#"style="text-decoration:none;">Placement</a></th>
+	<th><a href="#"style="text-decoration:none;">Library</a></th>
+	<th><a href="#"style="text-decoration:none;">sports</a></th>	
+</tr>
+</table>
+</nav>
+<img src="shadow.png" style="margin:25px 40px;border-radius:10px;box-shadow:0 5px 15px 1px #444;">
+</div>
+</header>
+
+</body>
+</html> 
