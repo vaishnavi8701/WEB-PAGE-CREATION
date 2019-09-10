@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>SRI VENKATESWARA COLLEGE OF ENGINEERING</title>
+<frameset rows="60%,40%"><frameset cols="50%,50%">
+<frame src="form.html">
+<frame src="timetable.html">
+</frameset>
+<frame src="svce.html">
+</frameset>
+</head>
+</html>
