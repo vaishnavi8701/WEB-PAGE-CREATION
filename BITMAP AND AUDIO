@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>BITMAP</title>
+</head ><body>
+<audio controls>
+<source src="HORSE.ogg" type="audio/ogg">
+</audio>
+<center><font size="8" color="red">INDIA</font></center>
+<center><img src="india.jpg" alt="india" height="500" width="500" usemap="#indiamap"></center>
+<map name="indiamap">
+<area shape="circle" coords="401,1136,50" alt="tamilnadu" href="tamilnadu.html">
+<area shape="circle" coords="326,1155,50" alt="kerala" href="kerala.html">
+<area shape="circle" coords="446,880,50" alt="karnataka" href="karnataka.html">
+</body></html>
+
+FILENAME: tamilnadu.html
+<html><head>
+<h1><body><center>TAMILNADU</CENTER></h1>
+<title>TAMILNADU</title>
+</head>
+<p><font size="5">Tamil Nadu formerly Madras State, is one of the 28 states of India. Its capital and largest city is Chennai (formerly known as Madras). Tamil Nadu lies in the southernmost part of the Indian subcontinent and is bordered by the union territory of Puducherry and the South Indian states of Kerala, Karnataka, and Andhra Pradesh. </p></font>
+</body></html>
+
+FILENAME:  kerala.html
+<html><head>
+<h1><body><center>KERALA</CENTER></h1>
+<title>KERALA</title>
+</head>
+<p><font size="5">Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. National parks like Eravikulam and Periyar, plus Wayanad and other sanctuaries, are home to elephants, langur monkeys and tigers</p></font></body>
+</html>
+
+FILENAME:karnataka.html
+<html><head>
+<h1><body><center>KARNATAKA</CENTER></h1>
+<title>KARNATAKA</title>
+</head>
+<p><font size="5">Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife.</p></font></body>
+</html>
