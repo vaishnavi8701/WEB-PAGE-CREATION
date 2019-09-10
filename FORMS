@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+<title>
+SVCE LIBRARY REGISTRATION
+</TITLE>
+</head>
+<body bgcolor="skyblue">
+<font size="4">
+<B><U><center> SVCE LIBRARY REGISTRATION</CENTER></U></B>
+<CENTER><table>
+<form>
+<tr><td><center>First name</td><td><input type="text" name="firstname"></center></td></tr>
+<tr><td><center>Last name</td><td><input type="text" name="lastname"></center></td></br></tr>
+<tr><td><center>Email</td><td><input type="email" name="email address"></center></td></br></tr>
+<tr><td><center>Password</td><td><input type="password" name="password"></center></td></tr></br>
+<tr><td><center>Submit</td><td><input type="submit" value="submit"></center></td></tr></br></form></table>
+</br><form action="#" method="post">
+<textarea>Type your comment here</textarea></form>
+</CEnter>
+</font>
+ 
+</body>
+</html>
