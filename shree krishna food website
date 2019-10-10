@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+margin-center: 50%;
+font-size=30px;
+}
+</style>
+</head>
+<body >
+
+<h1><center><font color="green">SREE KRISHNA SWEETS AND SNACKS</font></center></h1>
+<h2><center>ENJOY THE TASTE OF OUR HOMES</center></h2>
+<p><marquee><font color="red" size="5px">Opens at 9 a.m-9.pm on all days...<font></marquee>
+</p><center>
+<table style="background-color:#006400;">
+<tr>
+<th><a href="https://simple.wikipedia.org/wiki/Food" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbsp&nbsp&nbsp&nbspHome&nbsp&nbsp </span></a> </th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;"> &nbsp&nbspItems&nbsp&nbsp</span></a></th>
+<th><a href="#"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspAbout us&nbsp&nbsp</span></a></th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspVarities&nbsp&nbsp;</span></a></th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspCenters&nbsp&nbsp</span></a></th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspOrders&nbsp&nbsp</span></a></th>
+<TH><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspFeedback&nbsp&nbsp</span></a></th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspUploads&nbsp&nbsp</span></a></th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspFood tips&nbsp&nbsp</span></a></th>
+<th><a href="http://www.annauniv.edu/sports" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspRating&nbsp&nbsp</span></a></th>
+<th><a href="#" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspPrice&nbsp&nbsp</span></a></th>
+<TH><a href="http://www.annauniv.edu/IQAC" style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspWorkers&nbsp&nbsp</span></a></th>
+<th><a href="https://mail.annauniv.edu/"  style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspSnacks&nbsp&nbsp</span></a></th>
+<th><a href="#"style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspSnack Recipes&nbsp&nbsp </span></a> </th>
+<th><a href="#"style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbsp&nbspSweets&nbsp&nbsp</span></a> </th>
+<th><a href="#"style="text-decoration: none"><span style="font: bolder; color: #ffffff; font-size: 17px;">&nbspSweet Recipes &nbsp&nbsp&nbsp&nbsp</span></a> </th>
+</tr>
+</table>
+</center>
+
+
+<div class="container">
+  <img src="123.jpg" alt="Snow" style="width:100%;">
+ 
+<div class="centered"><H3><center>SREE KRISHNA SWEETS AND SNACKS was created in the year 1997 by Vaishnavi. The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to Australian diets. Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.
+
+Choosing a variety of nutritious foods, both from the five different groups and within each group, over the week and seasonally increases the likelihood of obtaining sufficient intake of all nutrients. Eating a variety of nutritious foods can protect our bodies from chronic disease and may also increase quality of life and longevity. </center></H3></DIV></div>
+
+<h3><center>SREE KRISHNA SWEETS AND SNACKS was created in the year 1997 by Vaishnavi. The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to Australian diets. Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.
+
+Choosing a variety of nutritious foods, both from the five different groups and within each group, over the week and seasonally increases the likelihood of obtaining sufficient intake of all nutrients. Eating a variety of nutritious foods can protect our bodies from chronic disease and may also increase quality of life and longevity. </center></H3>
+<center><button color="green"><font size=5px color="green">Order your food here......</font></button></center></br>
+
+
+
+
+<div class="container">
+  <img src="download.jpeg" alt="Snow" style="width:100%;">
+<div class="centered"><H3><center>SREE KRISHNA SWEETS AND SNACKS was created in the year 1997 by Vaishnavi. The key to eating well is to enjoy a variety of nutritious foods from each of the Five Food Groups. Foods in the Five Food Groups are grouped by their type and their contribution of nutrients to Australian diets. Within each group, healthy choices are those that are lowest in saturated fats, added sugars and added salt.
+
+Choosing a variety of nutritious foods, both from the five different groups and within each group, over the week and seasonally increases the likelihood of obtaining sufficient intake of all nutrients. Eating a variety of nutritious foods can protect our bodies from chronic disease and may also increase quality of life and longevity. </center></H3></DIV></div>
+
+<center><h2>Comments and views can be mailed in <a href="mail to:sreekrish@gmail.com">sreekrish@gmail.com</a>
+</h2></center></body>
+</html> 
