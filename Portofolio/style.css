@@ -1,0 +1,72 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+.topnav ul{
+    float: right;
+    list-style-type: none;
+}
+
+.topnav li{
+    float: left;
+}
+
+.topnav {
+    background-color: #1e2019;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+  
+.topnav a {
+    float: right;
+    color: #8d8585;
+    text-align: center;
+    padding: 0px 32px;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    margin-top: 0px;
+    text-decoration: none !important;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    color: #ffffff;
+}
+
+.container{
+    padding: 16rem;
+}
+
+#About{
+    background-color: #e2c044;
+    
+}
+
+#Projects{
+    background-color: #218380;
+}
+
+#Certifications{
+    background-color: #73ba9b;
+}
+
+#Certifications a{
+    color: black;
+}
+
+#Contact{
+    background-color: #f25f5c;
+}
+
+#Contact a{
+    text-decoration: none !important;
+    color: #4b4646;
+}
+.fab:hover{
+    opacity: 0.8;
+}
