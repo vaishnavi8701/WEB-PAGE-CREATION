@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head><script>
+var sun = new Image();
+var moon = new Image();
+var earth = new Image();
+function init() {
+  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+  window.requestAnimationFrame(draw);
+}
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "Your Favourite Planet Was Dragged";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "Your Favourite Planet Was Dropped";
+}
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+
+  ctx.globalCompositeOperation = 'destination-over';
+  ctx.clearRect(0, 0, 300, 300); // clear canvas
+
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+  ctx.save();
+  ctx.translate(150, 150);
+
+  // Earth
+  var time = new Date();
+  ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+  ctx.translate(105, 0);
+  ctx.fillRect(0, -12, 50, 24); // Shadow
+  ctx.drawImage(earth, -12, -12);
+
+  // Moon
+  ctx.save();
+  ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+  ctx.translate(0, 28.5);
+  ctx.drawImage(moon, -3.5, -3.5);
+  ctx.restore();
+
+  ctx.restore();
+  
+  ctx.beginPath();
+  ctx.arc(150, 150, 105, 0, Math.PI * 2, false); // Earth orbit
+  ctx.stroke();
+ 
+  ctx.drawImage(sun, 0, 0, 300, 300);
+
+  window.requestAnimationFrame(draw);
+}
+
+init();
+</script>
+<style>
+ h1 {
+            color: white;
+			margin-bottom:8%;
+		
+            text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px white;
+         }
+		 b {
+            color: white;
+			margin-bottom:10%;
+
+		    font-size:34px;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px black;
+         }
+		 body {
+  background-image: url("bck.jpg");
+  background-repeat: no-repeat, repeat;
+
+  background-position:fixed;
+  background-size:cover;
+  background-color: #cccccc;
+}
+         #borderimg1 { 
+            border: 10px solid transparent;
+			margin-top:25px;
+			margin-left:30%;
+			margin-right:30%;
+			font-size:24px;
+            padding: 15px;
+            border-image-source: url(download.jfif);
+            border-image-repeat: round;
+            border-image-slice: 30;
+            border-image-width: 10px;
+         }
+        
+      .droptarget {
+  float: center; 
+  width: 200px; 
+  height: 105px;
+  margin: 15px;
+  border:2px solid black;
+  padding: 10px;
+ 
+}
+      </style>
+</head>
+<body >
+<center><h1> THE SUN AND EARTH</h1></center>
+
+<br><b><center>Hello, Future Astronaut</center></b><br>
+<!--<video width="560" height="315" controls>
+  <source src="sun.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>-->
+ <center> <p id = "borderimg1"><canvas id="canvas" width="300" height="300"></canvas><br>The Sun warms our planet, and with the Moon, creates the tides. The Moon orbits the Earth and in turn, the Earth orbits the Sun. ... Because they appear to be the same size in the sky, the Sun, Earth and Moon work together to create eclipses. When the Moon is directly in between the Earth and Sun, we see a solar eclipse.</p>
+   </center><br>
+   <br><br><br>
+<center><b>
+Check out this video for more reference:</b></center><br><center>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+ 
+
+</audio></center><br><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZZpNE0ADKRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<br><br><br>
+ 
+<center><b>
+Drag and Drop your Favourite Planet:</b></center><center>
+<div 
+ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Earth</p>
+    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Sun</p>
+	 <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Moon</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p id="demo"></p></center><br><br><br><br>
+
+</body>
+</html>

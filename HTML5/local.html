@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Storing Data with HTML5 Local Storage</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+        .bg-img-reg {
+            background-image: url("fas.jpg");
+            min-height: 1200px;
+            height: 300px;
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+            position: relative;
+        } 
+		</style>
+<script>
+
+if(localStorage) {
+	$(document).ready(function() {
+		$(".save").click(function() {
+			// Get input name
+			var lastName = $("#lastName").val();
+			var firstName = $("#firstName").val();
+			
+			// Store data
+    		localStorage.setItem("first_name", firstName);
+			alert("Your first name is saved.");
+			
+			// Store data
+    		sessionStorage.setItem("last_name", lastName);
+			alert("Your last name is saved.");
+		});
+		$(".access").click(function() {
+			// Retrieve data
+    		alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+		});
+	});
+} else {
+    alert("Sorry, your browser do not support local storage.");
+}
+
+</script>
+</head>
+<body class="bg-img-reg" ><center>
+ <center>
+        <h1> Interest Arrives in You </h1>
+    </center>
+  <form>
+  <label>First Name: <input type="text" id="firstName"></label><br><br>
+    	<label>Last Name: <input type="text" id="lastName"></label><br><br>
+
+    
+        <button type="button" class="save">Save Name</button>
+        <button type="button" class="access">Get Name</button>
+    </form></center>
+</body>
+</html>
