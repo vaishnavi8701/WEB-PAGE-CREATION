@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 700px;
+                top: 0px;
+            }
+            50% {
+                background-color: cyan;
+                right: 700px;
+                top: 0px;
+            }
+            75% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+        
+        .divison {
+            width: 400px;
+            height: 40px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-iteration-count: 50;
+            margin: 14px;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+        
+        .bg-img-reg {
+            background-image: url("fas.jpg");
+            min-height: 1200px;
+            height: 300px;
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="bg-img-reg">
+    <center>
+        <h1> Interest Arrives in You </h1>
+    </center>
+    <div class="divison">
+        <a href="local.html" style="text-decoration:none; color:black;">
+            <center>Start filling the form</center>
+        </a>
+    </div>
+    <center>Your fav Color:
+        <input type="color" /></center><br>
+    <center>
+        <label for="country_name">Country : </label><input id="country_name" name="country_name" type="text" list="country" />
+        <datalist id="country">
+   <option value="India">
+   <option value="China">
+   <option value="USA">
+   <option value="Europe">
+  
+</datalist></center><br>
+    <center>
+
+        <center>Email:
+            <input id="email" type="email" /></center><br>
+        <center>
+            Website:
+            <input id="website" type="url" /></center><br>
+        <center>
+            Phone no:
+            <input id="phone" type="tel" /></center><br>
+        <center>Your Range:
+            <input id="slider1" type="range" min="100" max="500" step="10" /></center><br>
+        <center>
+            <label for="meeting">Date : </label><input id="meeting" type="date" /></center><br>
+        <center>
+            <section>
+                <p>Progress: <progress id="p" max=100><span>0</span>%</progress></p>
+
+                <script>
+                    var progressBar = document.getElementById('p');
+
+                    function updateProgress(newValue) {
+                        progressBar.value = newValue;
+                        progressBar.getElementsByTagName('span')[0].textContent = newValue;
+                    }
+                </script>
+            </section>
+            <center> <button type='submit'> Submit</button></center>
+
+</body>
+
+</html>
